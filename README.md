@@ -57,12 +57,10 @@ see the commit log rather than this section for the literal step-by-step.
 
 | Tool | Where used |
 |---|---|
-| _fill in: e.g. Claude Code / OpenCode / Cursor_ | _e.g. scaffolding lib/heuristic.ts, debugging the GitHub pagination edge case_ |
-| _model used_ | _e.g. claude-sonnet-4-6 via Claude Code_ |
-
-> Replace this table with your actual session log. Judges are specifically
-> scoring *documented, specific* usage over a vague "I used AI" claim —
-> reference actual files/decisions the agent helped with.
+| Claude (Anthropic, chat interface) | Architected and generated the initial full-stack scaffold — deterministic heuristic engine (`lib/heuristic.ts`), GitHub client with defensive error handling (`lib/github.ts`), multi-provider LLM client (`lib/llm.ts`), API route orchestration, and dashboard UI (health gauge, tier breakdown, commit list). |
+| Claude | Debugged live issues during local setup and Vercel deployment: environment variable configuration, GitHub API rate limiting, LLM provider timeout behavior. |
+| Claude | Extended the spec with an "Actionable Recommendations" feature beyond the original assignment — AI-generated, commit-specific next steps grounded in real tier data. |
+| Claude | Guided git workflow: staged and wrote 10 incremental Conventional Commits, GitHub repo setup, Vercel deployment with environment variables. |
 
 ## 3. MCP & custom skills log
 
