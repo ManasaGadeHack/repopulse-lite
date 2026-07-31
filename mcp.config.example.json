@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "repopulse-lite": {
+      "command": "node",
+      "args": ["scripts/mcp-server.mjs"],
+      "env": {
+        "GITHUB_TOKEN": "optional-personal-access-token"
+      }
+    }
+  }
+}
