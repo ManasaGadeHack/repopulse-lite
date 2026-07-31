@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background: #7c9cff40;
+  color: #fff;
+}
+
+body {
+  background-image:
+    radial-gradient(ellipse 800px 500px at 10% -10%, #7c9cff14, transparent),
+    radial-gradient(ellipse 600px 400px at 100% 0%, #4fd1a512, transparent);
+  background-attachment: fixed;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #1a2029 25%, #232a35 37%, #1a2029 63%);
+  background-size: 800px 100%;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid #7c9cff;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
